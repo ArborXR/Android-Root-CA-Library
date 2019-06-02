@@ -8,11 +8,16 @@ this are not respected by applications except the system web browser, unless the
 This module does exactly that, by providing a `network-security-config` resource that enables user-installed certificates _only in
 debuggable builds_.
 
+## Prebuilt release
+
+See the [Releases](https://github.com/aholkner/AndroidDebuggableRootCertificates/releases) page to download a prebuilt .aar file.
+
 ## Using with Unity
 
 Simply add the `DebuggableRootCertificates.aar` release file anywhere in the `Assets` folder.  It should work with Unity 2018.x and later.
 
 ## Using with other projects
 
-Use the appropriate module-linking functionality of your build system to add the `DebuggableRootCertificates.aar` file.  Alternatively,
-just have a look at the `AndroidManifest.xml` and `network_security_config.xml` file in this project and add them directly to your own.
+Use the appropriate module-linking functionality of your build system to add the `DebuggableRootCertificates.aar` file, or import this
+prjoect into your Gradle system.  Alternatively,  just have a look at the `AndroidManifest.xml` and `network_security_config.xml` file
+in this project and add them directly to your own.
